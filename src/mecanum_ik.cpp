@@ -8,11 +8,11 @@
 namespace mecanum_ik{
 
 // constructor
-Mecanum4Wheels::Mecanum4Wheels(double r, double vd, double hd)
+Mecanum4Wheels::Mecanum4Wheels(double radius, double v_dist, double h_dist)
 {
-	r = r;
-	vd = vd;
-	hd = hd;
+	r = radius;
+	vd = v_dist;
+	hd = h_dist;
 	vd_hd = (vd/2 + hd/2) / r;	// pre calculate constant
 }
 
