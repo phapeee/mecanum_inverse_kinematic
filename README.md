@@ -10,7 +10,7 @@ Mecanum_inverse_kinematic is a tool to calculate the inverse kinematic of a 4-wh
 #include <mecanum_ik/vector4_msg.h>;
 #define WHEEL_RADIUS (<your_wheel_radius>)    // the radius of the Mecanum wheel.
 #define V_DISTANCE (<your_vertical_distance>)  // distance between the center of the front and rear axles.
-#define H_DISTANCE (<your_horizontal_distance>)  // distance between the centers of the front/rear wheels. 
+#define H_DISTANCE (<your_horizontal_distance>)  // distance between the centers of the front/rear wheels.
 
 mecanum_ik::Mecanum4Wheels mecanum_op(WHEEL_RADIUS, V_DISTANCE, H_DISTANCE);  //Initiate the tool as a global variable
 mecanum_ik::vector4_msg wheel_angular_velocities;  // 4D vector contains the angular velocity of each motor (wheel_angular_velocities.x is front left, wheel_angular_velocities.y is front right, wheel_angular_velocities.z is back right, and wheel_angular_velocities.w is back left).
