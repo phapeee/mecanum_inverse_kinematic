@@ -40,6 +40,6 @@ Both functions return a 4D vector containing each motor's angular velocity.
   velocity.y = 5;  // psudo linear velocity in local y direction.<br/>
   velocity.z = 3;  // psudo angular velocity.<br/>
   
-  // Calculate the angular velocities of 4 motors.
+  // Calculate the angular velocities of 4 motors.<br/>
   wheel_angular_velocities = getLocalSpeed(velocity);<br/>
   // Then you can publish the wheel_angular_velocities as mecanum_ik::vector4_msg message;
