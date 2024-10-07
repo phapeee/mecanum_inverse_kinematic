@@ -30,10 +30,16 @@ The getLocalSpeed function accepts a geometry_msgs::Vector3 type variable in whi
 The getGlobalSpeed function is similar to the getLocalSpeed, however, the function treats input velocity as the desired global velocity relative to the global static frame, and an extra input of angle_position which tells the robot's angular position relative to the global frame.
 Both functions return a 4D vector containing each motor's angular velocity.
 # Example:
+  // desired local velocity<br/> 
   geometry_msgs::Vector3 velocity;
-  // The distance unit is defined by the unit you use in the WHEEL_RADIUS, V_DISTANCE, H_DISTANCE. The time unit is defined by the sample_period that you sample the robot's pose. The angular unit is in radian.
-  velocity.x = 5;
-  velocity.y = 5;
-  velocity.z = 3;
-  wheel_angular_velocities = getLocalSpeed(velocity);
+  
+  // The distance unit is defined by the unit you use in the WHEEL_RADIUS, V_DISTANCE, H_DISTANCE.<br/>
+  // The time unit is defined by the sample_period that you sample the robot's pose.<br/> 
+  // The angular unit is in radian.<br/>
+  velocity.x = 5;  // psudo linear velocity in local x direction.<br/>
+  velocity.y = 5;  // psudo linear velocity in local y direction.<br/>
+  velocity.z = 3;  // psudo angular velocity.<br/>
+  
+  // Calculate the angular velocities of 4 motors.
+  wheel_angular_velocities = getLocalSpeed(velocity);<br/>
   // Then you can publish the wheel_angular_velocities as mecanum_ik::vector4_msg message;
