@@ -33,7 +33,7 @@ Both functions return a 4D vector containing each motor's angular velocity.
   // desired local velocity<br/> 
   geometry_msgs::Vector3 velocity;
   
-  // The distance unit is defined by the unit you use in the WHEEL_RADIUS, V_DISTANCE, H_DISTANCE.<br/>
+  // The distance unit is defined by the unit you used in the WHEEL_RADIUS, V_DISTANCE, and H_DISTANCE.<br/>
   // The time unit is defined by the sample_period that you sample the robot's pose.<br/> 
   // The angular unit is in radian.<br/>
   velocity.x = 5;  // psudo linear velocity in local x direction.<br/>
