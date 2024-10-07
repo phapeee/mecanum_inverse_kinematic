@@ -8,6 +8,7 @@ Mecanum_inverse_kinematic is a tool to calculate the inverse kinematic of a 4-wh
 # If the package is successfully built, you can start to implement the library by:  
 #include "mecanum_ik/mecanum_ik.h";  
 #include <mecanum_ik/vector4_msg.h>;
+
 #define WHEEL_RADIUS (<your_wheel_radius>)    // the radius of the Mecanum wheel.
 #define V_DISTANCE (<your_vertical_distance>)  // distance between the center of the front and rear axles.
 #define H_DISTANCE (<your_horizontal_distance>)  // distance between the centers of the front/rear wheels.
