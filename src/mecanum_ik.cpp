@@ -13,7 +13,7 @@ Mecanum4Wheels::Mecanum4Wheels(double r, double vd, double hd)
 	r = r;
 	vd = vd;
 	hd = hd;
-	vd_hd = (vd + hd) / r;	// pre calculate constant
+	vd_hd = (vd/2 + hd/2) / r;	// pre calculate constant
 }
 
 // calculate the local speed of bot with given 3D vector velocity in which x and y components are desired local linear velocities and z component desried rotaiional velocity
