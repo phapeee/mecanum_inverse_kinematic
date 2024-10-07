@@ -5,7 +5,7 @@ Mecanum_inverse_kinematic is a tool to calculate the inverse kinematic of a 4-wh
   2. $ git clone https://github.com/phapeee/mecanum_inverse_kinematic.git
   3. $ cd ~/catkin_ws
   4. $ catkin_make
-# If the package is successfully built, you can start to implement the library by:
+# If the package is successfully built, you can implement the library by:
   #include "mecanum_ik/mecanum_ik.h";  
   #include <mecanum_ik/vector4_msg.h>;
   
