@@ -26,8 +26,8 @@ Mecanum_inverse_kinematic is a tool to calculate the inverse kinematic of a 4-wh
   mecanum_ik::vector4_msg wheel_angular_velocities;
 
 # There are 2 main functions of the Mecanum4Wheels class, getLocalSpeed(geometry_msgs::Vector3 velocity) and getGlobalSpeed(geometry_msgs::Vector3 velocity, double angle_position).
-The getLocalSpeed function accepts a geometry_msgs::Vector3 type variable in which the x and y components are the desired local x and y velocities relative to the robot's coordinate, and the z component is the rotational velocity of the robot.
-The getGlobalSpeed function is similar to the getLocalSpeed, however, the function treats input velocity as the desired global velocity relative to the global static frame, and an extra input of angle_position which tells the robot's angular position relative to the global frame.
+The getLocalSpeed function accepts a geometry_msgs::Vector3 type variable in which the x and y components are the desired local x and y velocities relative to the robot's coordinate, and the z component is the rotational velocity of the robot.<br/>
+The getGlobalSpeed function is similar to the getLocalSpeed, however, the function treats input velocity as the desired global velocity relative to the global static frame, and an extra input of angle_position which tells the robot's angular position relative to the global frame.<br/>
 Both functions return a 4D vector containing each motor's angular velocity.
 # Example:
   // desired local velocity<br/> 
