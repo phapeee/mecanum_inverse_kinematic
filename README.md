@@ -21,7 +21,7 @@ Mecanum_inverse_kinematic is a tool to calculate the inverse kinematic of a 4-wh
   //Initiate the tool as a global variable<br/>
   mecanum_ik::Mecanum4Wheels mecanum_op(WHEEL_RADIUS, V_DISTANCE, H_DISTANCE);
   
-  // 4D vector contains the angular velocity of each motor (wheel_angular_velocities.x is front left, wheel_angular_velocities.y is front right, wheel_angular_velocities.z is back right, and wheel_angular_velocities.w is back left).
+  // 4D vector contains the angular velocity of each motor (wheel_angular_velocities.x is front left, wheel_angular_velocities.y is front right,<br/> wheel_angular_velocities.z is back right, and wheel_angular_velocities.w is back left)<br/>
   mecanum_ik::vector4_msg wheel_angular_velocities;
 
 # There are 2 main functions of the Mecanum4Wheels class, getLocalSpeed(geometry_msgs::Vector3 velocity) and getGlobalSpeed(geometry_msgs::Vector3 velocity, double angle_position).
